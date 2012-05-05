@@ -5,7 +5,7 @@ Command line program that allows to generate .gitignore files base on prefenined
 
 DISCLAIMER  !!!
 -----------
-The gem is on beta, use at your own risk !!!! (because losing a .gitignore could  mean the end of everything as we know ;) )
+The gem is on beta, use at your own risk !!!! (e.g. you could lose your .gitignore if the template is not found :( )
 
 
 Installation
