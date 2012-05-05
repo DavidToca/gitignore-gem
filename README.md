@@ -1,4 +1,3 @@
-
 Gitignore Gem
 =============
 Command line program that allows to generate .gitignore files base on prefenined templates (in the future you will be able to create your own templates)
@@ -86,5 +85,5 @@ Contributing
 2. Create a branch (`git checkout -b my_gitignore`)
 3. Commit your changes (`git commit -am "Added nyancat"`)
 4. Push to the branch (`git push origin my_gitignore`)
-5. Create an [Issue][1] with a link to your branch
+5. Create an [Issue](https://github.com/DavidToca/gitignore-gem/issues) with a link to your branch
 6. Enjoy a refreshing Diet Coke and wait
