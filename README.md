@@ -1,6 +1,6 @@
 Gitignore Gem
 =============
-Command line program that allows to generate .gitignore files base on prefenined templates (in the future you will be able to create your own templates)
+Command line program that allows to generate .gitignore files base on predefined templates (in the future you will be able to create your own templates)
 
 
 DISCLAIMER  !!!
