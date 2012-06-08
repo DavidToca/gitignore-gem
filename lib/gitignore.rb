@@ -1,4 +1,3 @@
-
 class Gitignore
 
 	def self.create_gitignore (file_names,overwrite)
@@ -36,7 +35,7 @@ class Gitignore
 
 		end
 
-		return "Successfull created"
+		return "Successful created"
 
 	end
 
