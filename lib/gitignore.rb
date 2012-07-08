@@ -1,5 +1,3 @@
-
-
 class Gitignore
 
 def self.list_gitignore_files
@@ -13,19 +11,17 @@ def self.list_gitignore_files
 
  list_files.collect{|file| file.gsub(".gitignore","")  }
 
- 
+
 end
 
 def  self.create_gitignore (file_names,overwrite)
 
 		mode = overwrite ? 'w' : 'a'
 
-		#file_name=File.join(File.dirname(__FILE__), ".gitignore") 
 		file_name=File.join(".", ".gitignore") 
-		#puts file_namen
-	 
+
 		File::open(file_name,mode) do |f|
-		
+
 			file_names.each do |name|
 
                          f<<"\n##{'*' * 10 } #{name} template#{'*' * 10 } \n\n"
@@ -52,7 +48,7 @@ def  self.create_gitignore (file_names,overwrite)
 
 		end
 
-		return "Successfull created"
+		return "Successful created"
 
 	end
 
@@ -64,4 +60,12 @@ end
   #puts ignore.create_gitignore(['Linux','Eclipse','emacs``'],true)
 #  puts ignore.create_gitignore(ARGV,false)
 #end
+
+
+
+
+
+
+
+
 
