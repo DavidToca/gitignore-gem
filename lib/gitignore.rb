@@ -1,19 +1,34 @@
 
+
 class Gitignore
 
-	def self.create_gitignore (file_names,overwrite)
+def self.list_gitignore_files
+
+ template_dir=File.join(File.dirname(__FILE__),"gitignore","templates") 
+
+ list_files = Dir.entries(template_dir)
+
+ list_files.delete('.')
+ list_files.delete('..')
+
+ list_files.collect{|file| file.gsub(".gitignore","")  }
+
+ 
+end
+
+def  self.create_gitignore (file_names,overwrite)
 
 		mode = overwrite ? 'w' : 'a'
 
 		#file_name=File.join(File.dirname(__FILE__), ".gitignore") 
 		file_name=File.join(".", ".gitignore") 
-		#puts file_name
+		#puts file_namen
 	 
 		File::open(file_name,mode) do |f|
 		
 			file_names.each do |name|
 
-				f<<"\n#########{name}#########\n\n"
+                         f<<"\n##{'*' * 10 } #{name} template#{'*' * 10 } \n\n"
 
 				begin
 
@@ -29,9 +44,10 @@ class Gitignore
 
 						return "Exception: #{err}"
 						#err
+
 				end
 
-				f<<"\n#####################\n\n"
+				f<<" \n"
 			end
 
 		end
