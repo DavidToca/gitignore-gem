@@ -2,4 +2,46 @@
 
 require 'gitignore'
 
-puts Gitignore.create_gitignore(ARGV,true)
+require 'optparse'
+
+options = {}
+
+opt_parser = OptionParser.new do |opt|
+
+   opt.banner = "Usage: gitignore NAMES_OF_TEMPLATES [OPTIONS]"
+   opt.separator  ""
+   opt.separator  "Example: gitignore android osx eclipse"
+   opt.separator  ""
+   opt.separator  "Options"
+
+ opt.on("-h","--help","help") do
+     options[:help] = true
+ end
+
+ opt.on("-o","--overwrite","overwrite the contents of  existing gitignore file") do
+    options[:overwrite] = true
+ end
+
+ opt.on("-l","--list","prints all possible templates") do
+      options[:list] = true
+ end
+
+end
+
+begin
+opt_parser.parse! ARGV
+ 
+rescue => err
+   puts "Wrong arguments"
+   Process.exit 1
+
+end
+
+if (options.empty? and ARGV.empty?) or options[:help]
+   puts opt_parser
+elsif options[:list]
+   puts Gitignore::list_gitignore_files
+else
+ puts Gitignore::create_gitignore(ARGV,options[:overwrite])
+end
+
