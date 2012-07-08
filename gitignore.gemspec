@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
 	s.name			=	'gitignore'
-	s.version		=	'0.0.0'
+	s.version		=	'0.1.0'
 	s.executables		=	'gitignore'
-	s.date			=	'2011-05-04'
+	s.date			=	'2012-07-06'
 	s.summary		=	"Generate .gitignore files"
 	s.description		=	"Use file templeates to create .gitignore files"
 	s.authors		=	["David Toca"]
