@@ -1,19 +1,5 @@
 
-########OSX#########
-
-.DS_Store
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-#####################
-
-
-########ruby#########
+#**********ruby template**********
 
 *.gem
 *.rbc
@@ -33,6 +19,66 @@ tmp
 .yardoc
 _yardoc
 doc/
+ 
 
-#####################
+#**********osx template**********
 
+.DS_Store
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+ 
+
+#**********ruby template**********
+
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
+ 
+
+#**********osx template**********
+
+.DS_Store
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+ 
+
+#**********emacs template**********
+
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+ 
