@@ -17,7 +17,7 @@ Installation
 Usage
 -----
 
-	Usage: gitignore NAMES\_OF\_TEMPLATES [OPTIONS]
+	Usage: gitignore NAMES_OF_TEMPLATES [OPTIONS]
 
 	Example: gitignore android osx eclipse
 
