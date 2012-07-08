@@ -17,17 +17,17 @@ Installation
 Usage
 -----
 
-Usage: gitignore NAMES\_OF\_TEMPLATES [OPTIONS]
+	Usage: gitignore NAMES\_OF\_TEMPLATES [OPTIONS]
 
-Example: gitignore android osx eclipse
+	Example: gitignore android osx eclipse
 
-Options
+	Options
 
-    -h, --help                       help
+   	 -h, --help                       help
 
-    -o, --overwrite                  overwrite the contents of  existing gitignore file
+    	-o, --overwrite                  overwrite the contents of  existing gitignore file
 
-    -l, --list                       prints all possible templates
+    	-l, --list                       prints all possible templates
 
 Example
 -----
