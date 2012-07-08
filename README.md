@@ -17,6 +17,21 @@ Installation
 
 Usage
 -----
+
+Usage: gitignore NAMES\_OF\_TEMPLATES [OPTIONS]
+
+Example: gitignore android osx eclipse
+
+Options
+
+    -h, --help                       help
+
+    -o, --overwrite                  overwrite the contents of  existing gitignore file
+
+    -l, --list                       prints all possible templates
+
+Example
+-----
 Let say we want to create  a gitignore file for a project in a mac, and our project will use ruby, we would execute:
 
 
@@ -24,7 +39,7 @@ Let say we want to create  a gitignore file for a project in a mac, and our proj
 
 ouput:
 -----
-    #######OSX#########
+    #********** OSX **********
 
 	.DS_Store
 
@@ -35,10 +50,7 @@ ouput:
 	.Spotlight-V100
 	.Trashes
 
-	#####################
-
-
-	########ruby#########
+	#********** ruby **********
 
 	*.gem
 	*.rbc
@@ -59,25 +71,25 @@ ouput:
 	_yardoc
 	doc/
 
-	#####################
-
-
 Or let say our  project is on linux, and we will use django, and of course python , SASS, and emacs
 
     gitignore Django Linux Python SASS emacs
  
-
-ouput
------
-Too long to put in here :)
-
 templates
 -----
-you can find a list of all templates here 
+
+This gem use the github templates, you can check it at
 
 [Github Templates] (https://github.com/github/gitignore/)
 
-I will add a `gitignore -list` (some day)
+or you can just execute 
+
+   gitignore --list
+
+I recommend you to use it in combination with grep as follows
+ 
+   gitignore --list | grep 'Text'
+
 
 Contributing
 ------------
