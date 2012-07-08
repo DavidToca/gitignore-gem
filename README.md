@@ -23,11 +23,11 @@ Usage
 
 	Options
 
-   	 -h, --help                       help
-
-    	-o, --overwrite                  overwrite the contents of  existing gitignore file
-
-    	-l, --list                       prints all possible templates
+	-h, --help                       help
+	
+	-o, --overwrite                  overwrite the contents of  existing gitignore file
+	
+	-l, --list                       prints all possible templates
 
 Example
 -----
